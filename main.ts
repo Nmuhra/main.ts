@@ -1,10 +1,14 @@
 
-function dosomething() {
-  for(var i =0; i < 5; i++) {
-    console.log(i);
-  }
-
-  console.log("Finally: " + i);
+interface Point{
+  x: number,
+  y:number
 }
 
-dosomething();
+let drawPoint = (point: Point) => {
+  // ...
+}
+
+drawPoint({ 
+  x: 1,
+  y: 2
+})
