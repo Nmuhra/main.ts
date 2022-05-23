@@ -1,10 +1,12 @@
 
-function dosomething() {
-  for(var i =0; i < 5; i++) {
-    console.log(i);
+class Point {
+   constructor(private x?: number, private y?: number){
   }
-
-  console.log("Finally: " + i);
+  
+  draw() {
+    console.log("X: " + this.x + ", y: " + this.y);
+  }
 }
 
-dosomething();
+let point = new Point(1, 2);
+point.draw();
